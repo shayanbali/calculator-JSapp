@@ -8,42 +8,44 @@
     <title>JS calculator</title>
 </head>
 <body>
-    <textarea name="" id="" cols="30" rows="10">
+    <textarea name="" id="txt-area" cols="30" rows="10">
     </textarea>
 
     <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
+        <button onclick="numButton(1)">1</button>
+        <button onclick="numButton(2)">2</button>
+        <button onclick="numButton(3)">3</button>
+        <button id="plus" onclick="operation('+')">+</button>
         
     </div>
 
 
     <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+        <button onclick="numButton(4)">4</button>
+        <button onclick="numButton(5)">5</button>
+        <button onclick="numButton(6)">6</button>
+        <button onclick="operation('-')">-</button>
         
     </div>
 
     <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
+        <button onclick="numButton(7)">7</button>
+        <button onclick="numButton(8)">8</button>
+        <button onclick="numButton(9)">9</button>
+        <button onclick="operation('*')">*</button>
         
     </div>
 
     <div>
-        <button>C</button>
-        <button>0</button>
-        <button>=</button>
-        <button>/</button>
+        <button onclick="clearButtons()">C</button>
+        <button onclick="numButton(0)">0</button>
+        <button onclick="operation('=')">=</button>
+        <button onclick="operation('/')">/</button>
         
     </div>
 
+
+    <script src="index.js"></script>
     
 </body>
 </html>
