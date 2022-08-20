@@ -28,3 +28,11 @@ button {
 button:hover {
     background-color: rgb(83, 7, 7);
 }
+
+textarea {
+    font-size: 20px;
+    border-radius: 1em;
+    width: 40%;
+    background-color: rgb(255, 121, 121);
+    resize: none;
+}
